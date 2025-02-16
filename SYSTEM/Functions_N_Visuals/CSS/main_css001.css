@@ -1,0 +1,373 @@
+body{
+   background-image: url('SYSTEM/Resources/IAG/BGI3.gif');
+
+   
+   z-index:1;
+     -webkit-user-drag: none;
+     position: fixed;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     height: fit-content;
+     width: fit-content; 
+     
+   }
+.BGI{
+    
+   user-select: none;
+/*
+
+   height: 714px;
+    width: 1498px;
+    
+*/
+  
+   height: 730px;
+    width: 1510px;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: fixed;
+        object-fit:fill;
+}
+
+ #TheBox {
+        display: none;
+        height:0px;
+        width: 0px;
+ }
+
+#Niga{
+    top: 50%;
+    left: 50%;
+    height:500px;
+    width: 300px;
+    position:absolute;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+    filter: blur(0px);
+   
+    background-color:rgba(255,0,0,0.5);
+   
+    
+    animation-name:mpanim001;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+ 
+ }
+ #Btn_TorF{
+   border: 2px, groove , darkgreen;  
+   cursor: pointer ;
+   display: block;
+    top: 50%;
+    left: 50%;
+    height:40px;
+    width: 100px;
+    background-color:rgba(0,255,0,0.5);
+    transform: translate(-50%,-50%);
+    z-index: 3;
+    position: absolute;
+    
+    border-radius:10px ;
+    color:rgba(1,100,1,0.8);
+    font-family:impact;
+    
+ }
+/* #Button_Blur:hover{     
+   top: 50%;
+   left: 50%;
+   height:50px;
+   width: 110px;
+   background-color:rgba(0,255,0,1);
+   transform: translate(-50%,-50%);
+   z-index: 2;
+   filter: blur(50px);
+} */
+ #Btn_TorF:hover{
+   height:50px;
+   width: 110px;
+
+   font-size:20px;
+   background-color:rgba(0,225,0,1);
+   color:rgba(1,200,1); 
+   box-shadow: 0px 0px 10px lime;
+   z-index: 3;
+   border: 2px,groove, green;z 
+}
+
+#Btn_TorF:active{
+   color:rgba(200,200,50);
+   
+   height:48px;
+   width: 108px;
+   font-size:18px;
+}
+.MainBtnAnimation{
+ animation-name: BtnAnima;
+ animation-duration: 2s;
+
+}
+ #Blur{
+  border: 40px,solid, lime,;  
+   filter: blur(50px);
+
+  
+   
+   top: 50%;
+   left: 50%;
+   height:460px;
+   width: 260px;
+   background-color:rgba(255,255,255);
+   transform: translate(-50%,-50%);
+   z-index: 2;
+   position: fixed;
+  
+   border-style:dashed;
+
+
+   animation-name:banim001;
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+
+   
+}
+
+
+
+ .textbox{
+     top: 5%;
+    left: 50%;
+     
+    position:fixed;
+    transform: translate(-50%,-50%);
+    z-index: 8;
+
+    user-select: none;
+   animation-name: Null;
+   
+ }
+
+ #TBL{
+   
+   top: 50%;
+   left: 50%;
+   height:490px; width: 290px;
+      position:fixed;
+   transform: translate(-50%,-50%);
+   z-index: 4;
+   
+   background-color:rgba(225,225,225,0.5);
+    
+   animation-name: TBLSizeShifting;
+   animation-duration: 25s;
+   animation-iteration-count:infinite;
+   overflow: scroll;
+   user-select: none;
+} 
+
+.Contents{
+   
+   top: 58%;
+   left: 50%;
+   height:390px; width: 270px;
+      position:fixed;
+   transform: translate(-50%,-50%);
+
+   border: 1px, solid, black;
+
+   
+   z-index: 4;
+
+} 
+
+::-webkit-scrollbar {
+   width: 7px;
+   z-index: 20;
+   display: none;
+ }
+ 
+ ::-webkit-scrollbar-thumb {
+   background: rgba(0,0,0,0.1); 
+   z-index: 20;
+ }
+
+ ::-webkit-scrollbar-thumb:hover {
+   background: rgba(0,0,0,0.5); 
+   z-index: 20;
+ }
+ ::-webkit-scrollbar-thumb:active {
+   background: rgba(255,255,0,0.5); 
+   z-index: 20;
+ }
+
+
+#CloseBtn{
+  user-select: none;
+  cursor: pointer;
+   top: 5%;
+   left: 90%;
+
+   position:fixed;
+   transform: translate(-50%,-50%);
+   z-index: 8;
+    
+   border: 2px, solid;
+   border-radius: 3px;
+   font-size: 10px;
+   text-align:justify;
+   font-weight:bold ;
+   color:Black;
+
+   background-color: rgba(0,225,0,1);
+
+   animation-name:XBtn;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+ #txt001{
+    font-family:arial;
+    font-weight: bold;
+    z-index: 10;
+   
+ 
+ }
+
+ #SelText{
+   font-family:arial;
+   font-weight: bold;
+   position: absolute;
+   z-index: 10;
+
+   top: 10%;
+   left: 50%;
+     
+   transform: translate(-50%,-50%);
+   user-select: none;
+ }
+ 
+.SBtnC{
+   top: -6%;
+
+   left: -3.67%;
+
+   height: 280px;
+   width: 290px;
+
+ /*   background-color: rgba(0,225,0,1); */
+   position: relative;
+   z-index: 1;
+   user-select: none;
+}
+
+ .SelectionButtons{
+   cursor: pointer;
+   user-select: none;
+   display:block;
+   height: 50px;
+   width: 120px;
+   background-color: rgba(255,255,255,0.1);
+   border:none;
+   box-shadow: 0px 0px 2px 1px white;
+   position:absolute;
+   overflow: hidden;
+   transform: translate(-50%,-50%);
+    margin-top: 10%;
+    z-index: 20;
+    border-radius:5px ;
+}
+ .SelectionButtons:hover{
+   height: 60px;
+   width: 130px;
+
+   
+   font-size: 17px;
+   font-weight: bold;
+
+ }
+
+ .SelectionButtons:hover .BtnFlash{
+   animation: BtnFlashAnm 1.5s infinite;
+ }
+
+ .SelectionButtons:active{
+   height: 55px;
+   width: 125px;
+
+   
+   font-size: 15px;
+   font-weight: bold;
+ }
+
+ .BtnFlash{
+   transform: rotate(35deg);
+   top:-35%;
+   left:115%;
+   height: 100px;
+   width: 20px;
+   z-index: -1;
+   position: absolute;
+   background-color: rgba(255,255,255,0.5); 
+ 
+   
+}
+
+  #SelBtn1{
+   top: 10%;
+   left: 28%;
+     
+   
+z-index: 10;
+  }
+  #SelBtn2{
+   top: 10%;
+   left: 72%;
+     
+   
+z-index: 10;
+  }
+  #SelBtn3{
+   top: 30%;
+   left: 28%;
+     
+   
+z-index: 10;
+  }
+
+  #SelBtn4{
+   top: 30%;
+   left: 72%;
+     
+   
+z-index: 10;
+  }
+
+  #SelBtn5{
+   top: 50%;
+   left: 28%;
+     
+   
+z-index: 10;
+  }
+  #SelBtn6{
+   top: 50%;
+   left: 72%;
+     
+   
+z-index: 10;
+  }
+  #SelBtn7{
+   top: 70%;
+   left: 28%;
+     
+   
+z-index: 10;
+  }
+  #SelBtn8{
+   top: 70%;
+   left: 72%;
+     
+   
+z-index: 10;
+  }
