@@ -1,24 +1,31 @@
 <!DOCTYPE html>
-<html>
-    <header>
-        <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <style> 
-    </style>
-    </header>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Device Redirect</title>
+  <script>
     
+    function redirectBasedOnDevice() {
+      
+      var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      
+      if (isMobile) {
+       
+        window.location.href = "Device/Mobile/BasicCalculatorMobile.html";
+      } else {
+       
+        window.location.href = "Device/PC/BasicCalculatorPC.html";
+      }
+    }
 
+    
+    redirectBasedOnDevice();
+  </script>
+</head>
 <body>
-   
+  
+  <noscript>
+    Please enable JavaScript to be redirected to the correct version.
+  </noscript>
 </body>
-
-
-
-
-<script>
-
-
-</script>
 </html>
