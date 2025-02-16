@@ -38,7 +38,7 @@ XBtn.addEventListener("click", function() {
 
 
   function SelectedPage1(){
-    window.location.href = "SYSTEMS/HTMLs/BasicCalculator/index.html";
+    window.location.href = "SYSTEM/HTMLs/BasicCalculator/index.html";
      
   }
 
