@@ -13,7 +13,7 @@ body{
      
    }
 .BGI{
-    
+    pointer-events:none ;    
    user-select: none;
 /*
 
