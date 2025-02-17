@@ -1,6 +1,7 @@
 body{
+   
    background-image: url('SYSTEM/Resources/IAG/BGI3.gif');
-
+     
    
    z-index:1;
      -webkit-user-drag: none;
@@ -13,7 +14,9 @@ body{
      
    }
 .BGI{
-    pointer-events:none ;    
+   -webkit-user-drag: none;
+     
+   pointer-events:none ;    
    user-select: none;
 /*
 
