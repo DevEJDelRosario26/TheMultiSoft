@@ -70,12 +70,26 @@
 
         height: 50px;
         width: 120px;
-
+        
+        overflow: hidden;
        transform: translate(-50%, -50%);
         top: -16%;
         left: 24%;
+        z-index: 5;
         
     }
+    #Mini_Led2_Video{
+      position: fixed;
+      transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;     
+           
+        
+        height: 710px;
+        width: 780px;
+        z-index: 4;
+      }
+
 
     .BtnContainer{
         transform: translate(-50%, -50%);
@@ -230,7 +244,10 @@
        
         <div class="InnerBtnContainer">
      
-    <video src="" class="Mini_Led2"></video>
+    <div class="Mini_Led2">
+    <video src="SYSTEM/Resources/Video/BinaryAnimation.mp4"  id="Mini_Led2_Video" autoplay muted></video>
+    </div>
+    
           <div class="SwitchDiv"><button  class="Switch" id="Switch"><button class="Switch" id="SwitchBtn"></button></button></div>
     <button onclick="evaluateExpression()" class="calcBtns" id="Equal">=</button> 
      <button class="calcBtns" id="Multiplication">X</button>
