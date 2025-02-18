@@ -126,7 +126,7 @@
   }
     
 #Switch {
-    position: fixed;
+     position: fixed;
         height: 45px;
         width: 80px;
         background-color: rgb(151, 0, 0);
@@ -144,7 +144,7 @@
         user-select: none;
         transform: translate(-50%, -50%);
         top:50%;
-        left: 77%; /*30-77*/
+        left: 30%; /*30-77*/
 
   }
     .calcBtns{
@@ -246,7 +246,7 @@
         <div class="InnerBtnContainer">
      
         <div class="Mini_Led2">
-            <video  id="Mini_Led2_Video" autoplay  loop>
+            <video  id="Mini_Led2_Video" autoplay loop>
                 <source src="SYSTEM/Resources/Video/BinaryAnimation.mp4" type="video/mp4">
                
             </video>
@@ -306,16 +306,15 @@ let turnOn = false;
 switchBtn.forEach(function(element) {
     element.addEventListener("click", function() {
 if (turnOn){
-    
+    SwBtnMove.style.left = "30%";
+    SwBtnBgC.style.backgroundColor = "rgb(0, 151, 0)";
+    turnOn = true;
+}
+else{
     SwBtnMove.style.left = "77%";
     SwBtnBgC.style.backgroundColor = "rgb(151, 0, 0)";
     turnOn = false;
 
-}
-else{
-    SwBtnMove.style.left = "30%";
-    SwBtnBgC.style.backgroundColor = "rgb(0, 151, 0)";
-    turnOn = true;
 }
 });
 });
