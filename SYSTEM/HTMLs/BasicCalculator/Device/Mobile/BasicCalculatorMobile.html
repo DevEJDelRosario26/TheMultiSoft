@@ -276,7 +276,6 @@
 
 
 <script>
-
 const mainScreen = document.getElementById("LED_Screen");
 const SwBtnMove = document.getElementById("SwitchBtn");
 const SwBtnBgC = document.getElementById("Switch");
@@ -523,5 +522,16 @@ function factorial(n) {
 mainScreen.readOnly = true;
 
 
+
+
+
+
+
+
+document.querySelectorAll(".calcBtns").addEventListener("click", function() {
+    navigator.vibrate([300, 100, 300]);
+});
+
+    
 </script>
 </html>
