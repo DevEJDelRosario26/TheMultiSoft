@@ -168,7 +168,7 @@
 
 
   <script>
-    setInterval(redirectBasedOnDevice, 9000);
+   
     function redirectBasedOnDevice() {
       
       var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
@@ -182,8 +182,12 @@
       }
     }
 
-    
-    redirectBasedOnDevice();
+    const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay));
+
+    async () => {
+      await sleep(6000);
+      redirectBasedOnDevice();
+    }
   </script>
 
 
