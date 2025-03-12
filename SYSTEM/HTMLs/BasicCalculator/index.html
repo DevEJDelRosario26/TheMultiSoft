@@ -182,12 +182,8 @@
       }
     }
 
-    const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay));
-
-    async () => {
-      await sleep(6000);
-      redirectBasedOnDevice();
-    }
+    setTimeout(redirectBasedOnDevice, 6000);
+    
   </script>
 
 
