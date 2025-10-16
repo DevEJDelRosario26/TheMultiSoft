@@ -41,6 +41,10 @@ XBtn.addEventListener("click", function() {
     window.location.href = "SYSTEM/HTMLs/BasicCalculator/index.html";
      
   }
+ function SelectedPage1(){
+    window.location.href = "SYSTEM/HTMLs/Binary_To_Decimal/index.html";
+     
+  }
 
   let buttons = document.getElementsByTagName("button");
   let audio = document.getElementById("BtnSound");
@@ -78,3 +82,4 @@ SelectionButtons.addEventListener("mouseleave", ()=>{
   BtnFlashAnm.classList.remove("BtnFlashAnimation");
   });
   */
+
